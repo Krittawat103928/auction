@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Models\AuctionModel;
+
 class Auction extends BaseController
 {
 
@@ -18,6 +20,10 @@ class Auction extends BaseController
         // return view('insert_view');
     }
 
+    public function uploaddata()
+    {
+        return view('upload_view');
+    }
 
     public function insertt()
     {

@@ -9,6 +9,10 @@ $routes->get('/', 'Home::index');
 $routes->get('/fecth_data', 'Home::fecth_data');
 $routes->get('/insertAuction', 'Home::insertAuction');
 
+$routes->get('/uploaddata', 'Auction::uploaddata');
+
+
+
 
 $routes->post('/loadajax', 'Home::load_ajax');
 
