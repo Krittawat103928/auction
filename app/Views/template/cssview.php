@@ -30,4 +30,3 @@
 <link rel="stylesheet" href="assets/select2/css/select2.css" />
 <!-- Select2 Bootstrap 5 Theme CSS -->
 <link rel="stylesheet" href="assets/select2/css/select2-bootstrap-5-theme.css" />
-

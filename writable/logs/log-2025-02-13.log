@@ -1,0 +1,351 @@
+CRITICAL - 2025-02-13 03:23:28 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 32.
+ 1 APPPATH\Controllers\FileUploadController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:24:19 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 35.
+ 1 APPPATH\Controllers\FileUploadController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:24:30 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 35.
+ 1 APPPATH\Controllers\FileUploadController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:25:09 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 35.
+ 1 APPPATH\Controllers\FileUploadController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:25:37 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 35.
+ 1 APPPATH\Controllers\FileUploadController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:28:52 --> ErrorException: Undefined array key "fileInput"
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 17.
+ 1 APPPATH\Controllers\FileUploadController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fileInput"', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:29:34 --> ErrorException: Undefined array key "fileInput"
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 17.
+ 1 APPPATH\Controllers\FileUploadController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fileInput"', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:36:21 --> Error: Call to a member function isValid() on array
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:36:39 --> Error: Call to a member function isValid() on array
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:38:01 --> Error: Call to a member function isValid() on array
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:38:48 --> Error: Call to a member function isValid() on array
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:39:11 --> Error: Call to a member function isValid() on array
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:39:26 --> Error: Call to a member function isValid() on array
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:46:41 --> Error: Call to a member function isValid() on array
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:48:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "upload_form.php"
+[Method: POST, Route: upload/uploadFiles]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('upload_form.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('upload_form', [], true)
+ 3 APPPATH\Controllers\FileUploadController.php(31): view('upload_form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:48:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "upload_form.php"
+[Method: POST, Route: upload/uploadFiles]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('upload_form.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('upload_form', [], true)
+ 3 APPPATH\Controllers\FileUploadController.php(31): view('upload_form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:50:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "uploaddata.php"
+[Method: POST, Route: upload/uploadFiles]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('uploaddata.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('uploaddata', [], true)
+ 3 APPPATH\Controllers\FileUploadController.php(31): view('uploaddata', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:50:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "uploaddata.php"
+[Method: POST, Route: upload/uploadFiles]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('uploaddata.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('uploaddata', [], true)
+ 3 APPPATH\Controllers\FileUploadController.php(31): view('uploaddata', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:51:41 --> Error: Call to a member function hasMoved() on null
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:51:49 --> Error: Call to a member function hasMoved() on null
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:52:00 --> Error: Call to a member function hasMoved() on null
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:52:33 --> Error: Call to a member function hasMoved() on null
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:52:35 --> Error: Call to a member function hasMoved() on null
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:52:43 --> Error: Call to a member function hasMoved() on null
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:55:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "upload_form.php"
+[Method: POST, Route: upload/uploadFiles]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('upload_form.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('upload_form', [], true)
+ 3 APPPATH\Controllers\FileUploadController.php(51): view('upload_form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:55:54 --> Error: Call to a member function isValid() on array
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:56:14 --> Error: Call to a member function isValid() on array
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:56:47 --> Error: Call to a member function hasMoved() on array
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:57:33 --> Error: Call to a member function hasMoved() on array
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 03:59:02 --> Error: Call to a member function hasMoved() on array
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 04:01:38 --> Error: Call to a member function hasMoved() on array
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 04:07:49 --> CodeIgniter\HTTP\Exceptions\HTTPException: The original file is not a valid file.
+[Method: POST, Route: upload/uploadFiles]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 142.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(142): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\FileUploadController.php(48): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs\\auction\\writable\\uploads/images/', '')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 04:08:22 --> CodeIgniter\HTTP\Exceptions\HTTPException: The original file is not a valid file.
+[Method: POST, Route: upload/uploadFiles]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 142.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(142): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\FileUploadController.php(49): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs\\auction\\writable\\uploads/images/', '')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 04:11:30 --> Error: Call to a member function hasMoved() on null
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 04:12:04 --> Error: Call to a member function hasMoved() on null
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 04:22:43 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 35.
+ 1 APPPATH\Controllers\FileUploadController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

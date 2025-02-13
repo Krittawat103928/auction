@@ -15,7 +15,7 @@ class Auction extends BaseController
         // Load model
         $this->auctionModel = new AuctionModel();
     }
-    public function index(): string
+    public function index()
     {
         // return view('insert_view');
     }

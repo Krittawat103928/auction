@@ -29,6 +29,93 @@
             padding-top: 3px;
         }
     </style>
+
+    <style>
+        body {
+            /* font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4; */
+        }
+
+        .upload-box {
+            width: 100%;
+            padding: 20px;
+            border: 2px dashed #007bff;
+            text-align: center;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background: #ddd;
+            height: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar div {
+            height: 100%;
+            background: #007bff;
+            width: 0%;
+        }
+
+        .file-list {
+            margin-top: 10px;
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+
+        .file-list li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            border: 1px solid #ddd;
+            margin: 5px 0;
+            background: #fff;
+            cursor: grab;
+            position: relative;
+        }
+
+        .drag-handle {
+            cursor: grab;
+            margin-right: 10px;
+        }
+
+        .file-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .file-info {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .file-name {
+            display: flex;
+            align-items: center;
+        }
+
+        .delete-button {
+            background: transparent;
+            border: none;
+            color: red;
+            font-size: 18px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
 </head>
 
 <body class="index-page">
@@ -40,284 +127,95 @@
         <!-- Featured Services Section -->
         <section id="" class="section" style="    background-color: #e9ebf4;">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="mb-3">
-                            <h5>หัวข้อ</h5>
-                            <!-- <label for="basic-url" class="form-label">หัวข้อ</label> -->
+                <form action="<?= base_url('/upload/uploadFiles') ?>" method="POST" enctype="multipart/form-data">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <h5>หัวข้อ</h5>
+                                <!-- <label for="basic-url" class="form-label">หัวข้อ</label> -->
+                                <div class="input-group">
+
+                                    <input type="text" class="form-control" id="basic-url"
+                                        aria-describedby="basic-addon3 basic-addon4">
+                                </div>
+                                <!-- <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div> -->
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h5>ประเภท</h5>
+                            <div class="mb-3">
+                                <!-- <label for="basic-url" class="form-label">วันที่ลงประกาศ</label> -->
+                                <div class="input-group">
+
+                                    <select class="form-select" id="exampleSelect" data-placeholder="Choose one thing"
+                                        aria-describedby="basic-addon3">
+                                        <option></option>
+                                        <option>Reactive</option>
+                                        <option>Solution</option>
+                                        <option>Conglomeration</option>
+                                        <option>Algoritm</option>
+                                        <option>Holistic</option>
+                                    </select>
+                                </div>
+                                <!-- <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div> -->
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h5>เลือกวันที่</h5>
                             <div class="input-group">
 
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                <input type="text" class="form-control" id="datepicker" aria-describedby="basic-addon3">
                             </div>
-                            <!-- <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div> -->
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <h5>ประเภท</h5>
+                        <div class="clearfix">
+                            <br>
+                        </div>
+
+                        <div class="col-12">
+                            <h5>รายละเอียด</h5>
+                            <!-- <div id="editor"> -->
+                            <!-- <p>Core build with no theme, formatting, non-essential modules</p> -->
+                            <!-- </div> -->
+
+                            <textarea></textarea>
+                        </div>
+                        <div class="clearfix">
+                            <br>
+                        </div>
                         <div class="mb-3">
-                            <!-- <label for="basic-url" class="form-label">วันที่ลงประกาศ</label> -->
-                            <div class="input-group">
-
-                                <select class="form-select" id="exampleSelect" data-placeholder="Choose one thing" aria-describedby="basic-addon3">
-                                    <option></option>
-                                    <option>Reactive</option>
-                                    <option>Solution</option>
-                                    <option>Conglomeration</option>
-                                    <option>Algoritm</option>
-                                    <option>Holistic</option>
-                                </select>
+                            <div class="upload-box" id="drop-area">
+                                <p>Drag & Drop PDF files here or click to upload</p>
+                                <input type="file" id="fileInput" name="fileInput[]" multiple accept="application/pdf"
+                                    hidden>
+                                <div class="progress-bar">
+                                    <div id="progress"></div>
+                                </div>
+                                <ul class="file-list" id="file-list"></ul>
                             </div>
-                            <!-- <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div> -->
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <h5>เลือกวันที่</h5>
-                        <div class="input-group">
 
-                            <input type="text" class="form-control" id="datepicker" aria-describedby="basic-addon3">
-                        </div>
-                    </div>
-                    <div class="clearfix">
-                        <br>
-                    </div>
-
-                    <div class="col-12">
-                        <h5>รายละเอียด</h5>
-                        <!-- <div id="editor"> -->
-                        <!-- <p>Core build with no theme, formatting, non-essential modules</p> -->
-                        <!-- </div> -->
-
-                        <textarea></textarea>
-                    </div>
-                    <div class="clearfix">
-                        <br>
-                    </div>
-                    <div class="mb-3">
-                        <div id="file-upload-container" class="file-list">
-                            <!-- ไฟล์แรกที่แสดง (จะถูกลบเมื่อเพิ่มไฟล์ใหม่) -->
-                            <div class="input-group file-input-wrapper" draggable="true">
-                                <span class="drag-icon">⇅</span> <!-- ไอคอนลาก -->
-                                <span class="file-order">1.</span>
-                                <input class="form-control file-input" type="file" name="files[]" accept="application/pdf">
-                                <button type="button" class="btn btn-danger remove-btn">Remove</button>
+                        <div class="mb-3">
+                            <div class="upload-box" id="image-drop-area" style="margin-top: 20px;">
+                                <p>Drag & Drop Image files here or click to upload</p>
+                                <input type="file" id="imageInput" name="imageInput[]" multiple accept="image/*" hidden>
+                                <div class="progress-bar">
+                                    <div id="image-progress"></div>
+                                </div>
+                                <ul class="file-list" id="image-list"></ul>
                             </div>
-                            <p class="error-message" style="color: red; display: none;">Only PDF files are allowed.</p>
                         </div>
 
-                        <!-- ปุ่มเพิ่มไฟล์ -->
-                        <button type="button" class="btn btn-primary mt-2" id="addFileButton">Add More Files</button>
-
-                        <!-- ปุ่มส่งไฟล์ -->
-                        <button type="button" class="btn btn-success mt-2" id="submitFilesButton">Submit Files</button>
-
-                        <style>
-                            /* กำหนดให้ .file-input-wrapper ใช้ flexbox */
-                            .file-input-wrapper {
-                                display: flex;
-                                align-items: center;
-                                /* จัดแนวไอคอนและ input ให้อยู่ในแถวเดียวกัน */
-                                border: 2px dashed #888;
-                                padding: 10px;
-                                transition: all 0.3s ease;
-                                margin-bottom: 10px;
-                                /* ช่องระหว่างไฟล์ */
-                            }
-
-                            /* ไอคอนการลาก (drag-icon) */
-                            .drag-icon {
-                                font-size: 24px;
-                                color: #3498db;
-                                margin-right: 10px;
-                                /* เพิ่มช่องระหว่างไอคอนและ input */
-                            }
-
-                            /* เมื่อไฟล์กำลังถูกลาก */
-                            .file-input-wrapper.dragging {
-                                border: 2px solid #3498db;
-                                background-color: #f0f8ff;
-                                cursor: move;
-                            }
-
-                            /* กำหนดเคอร์เซอร์ให้เหมาะสมเมื่อสามารถลากไฟล์ได้ */
-                            .file-input-wrapper {
-                                cursor: grab;
-                            }
-
-                            /* เมื่อกำลังลากไฟล์ */
-                            .file-input-wrapper.dragging {
-                                cursor: grabbing;
-                            }
-
-                            /* สไตล์ปุ่มลบ */
-                            .remove-btn {
-                                margin-left: 10px;
-                                /* เพิ่มช่องระหว่างปุ่มลบกับไฟล์ */
-                            }
-                        </style>
-
-                        <script>
-                            document.addEventListener('DOMContentLoaded', function() {
-                                // ฟังก์ชันตรวจสอบประเภทไฟล์
-                                function validateFileInput(input) {
-                                    const file = input.files[0];
-                                    const errorMessage = input.closest('.file-input-wrapper').nextElementSibling;
-
-                                    if (file && file.type !== "application/pdf") {
-                                        errorMessage.style.display = 'block';
-                                        input.value = ''; // รีเซ็ต input field
-                                    } else {
-                                        errorMessage.style.display = 'none';
-                                    }
-                                }
-
-                                // ฟังก์ชันเพิ่ม input ไฟล์ใหม่
-                                function addFileInput() {
-                                    const fileUploadContainer = document.getElementById('file-upload-container');
-                                    const allInputs = fileUploadContainer.querySelectorAll('.file-input-wrapper');
-
-                                    const newInputDiv = document.createElement('div');
-                                    newInputDiv.classList.add('input-group', 'file-input-wrapper', 'mt-2');
-                                    newInputDiv.setAttribute('draggable', 'true'); // เปิดใช้งานการลาก
-                                    newInputDiv.innerHTML = `
-            <span class="drag-icon">⇅</span>
-            <span class="file-order">${allInputs.length + 1}.</span>
-            <input class="form-control file-input" type="file" name="files[]" accept="application/pdf">
-            <button type="button" class="btn btn-danger remove-btn">Remove</button>
-        `;
-
-                                    fileUploadContainer.appendChild(newInputDiv);
-
-                                    // เพิ่มข้อความ error เมื่อไฟล์ไม่ถูกต้อง
-                                    const errorMessage = document.createElement('p');
-                                    errorMessage.classList.add('error-message');
-                                    errorMessage.style.color = 'red';
-                                    errorMessage.style.display = 'none';
-                                    errorMessage.textContent = 'Only PDF files are allowed.';
-                                    fileUploadContainer.appendChild(errorMessage);
-
-                                    // เพิ่ม event listener เพื่อตรวจสอบการเปลี่ยนแปลงไฟล์
-                                    newInputDiv.querySelector('.file-input').addEventListener('change', function() {
-                                        validateFileInput(this);
-                                    });
-
-                                    // เพิ่ม event listener สำหรับปุ่มลบ
-                                    newInputDiv.querySelector('.remove-btn').addEventListener('click', function() {
-                                        newInputDiv.remove(); // ลบไฟล์ออก
-                                        updateFileOrder(); // อัปเดตลำดับหลังจากลบ
-                                    });
-
-                                    // อัปเดตลำดับไฟล์ใหม่
-                                    updateFileOrder();
-                                }
-
-                                // ฟังก์ชันอัปเดตลำดับไฟล์
-                                function updateFileOrder() {
-                                    const allInputs = document.querySelectorAll('.file-input-wrapper');
-                                    allInputs.forEach((input, index) => {
-                                        input.querySelector('.file-order').textContent = `${index + 1}.`; // อัปเดตลำดับ
-                                    });
-                                }
-
-                                // ฟังก์ชันส่งไฟล์
-                                document.getElementById('submitFilesButton').addEventListener('click', function() {
-                                    const formData = new FormData();
-
-                                    // รับข้อมูลไฟล์จากทุก input และเพิ่มไฟล์ลงใน FormData
-                                    const fileInputs = document.querySelectorAll('.file-input');
-                                    fileInputs.forEach((input) => {
-                                        const file = input.files[0];
-                                        if (file) {
-                                            formData.append('files[]', file);
-                                        }
-                                    });
-
-                                    // ส่งข้อมูล FormData ไปยังเซิร์ฟเวอร์ผ่าน AJAX
-                                    const xhr = new XMLHttpRequest();
-                                    xhr.open('POST', 'upload.php', true);
-                                    xhr.onreadystatechange = function() {
-                                        if (xhr.readyState === 4 && xhr.status === 200) {
-                                            alert('Files uploaded successfully!');
-                                            console.log(xhr.responseText); // แสดงผลการตอบกลับจาก PHP
-                                        }
-                                    };
-                                    xhr.send(formData);
-                                });
-
-                                // เพิ่ม event listener สำหรับการเพิ่มไฟล์ใหม่
-                                document.getElementById('addFileButton').addEventListener('click', function() {
-                                    addFileInput();
-                                });
-
-                                // ตรวจสอบประเภทไฟล์ของไฟล์แรก
-                                document.querySelector('.file-input').addEventListener('change', function() {
-                                    validateFileInput(this);
-                                });
-
-                                // ฟังก์ชันลากและจัดเรียงไฟล์
-                                const fileUploadContainer = document.getElementById('file-upload-container');
-                                fileUploadContainer.addEventListener('dragstart', function(e) {
-                                    if (e.target && e.target.classList.contains('file-input-wrapper')) {
-                                        e.dataTransfer.setData('text/plain', e.target.innerHTML);
-                                        e.target.classList.add('dragging');
-                                    }
-                                });
-
-                                fileUploadContainer.addEventListener('dragover', function(e) {
-                                    e.preventDefault();
-                                    const draggingElement = document.querySelector('.dragging');
-                                    const afterElement = getDragAfterElement(fileUploadContainer, e.clientY);
-                                    if (afterElement == null) {
-                                        fileUploadContainer.appendChild(draggingElement);
-                                    } else {
-                                        fileUploadContainer.insertBefore(draggingElement, afterElement);
-                                    }
-                                    updateFileOrder(); // อัปเดตลำดับเมื่อมีการลาก
-                                });
-
-                                fileUploadContainer.addEventListener('dragend', function(e) {
-                                    e.target.classList.remove('dragging');
-                                });
-
-                                // ฟังก์ชันเพื่อหาตำแหน่งของไฟล์ที่ถูกลาก
-                                function getDragAfterElement(container, y) {
-                                    const draggableElements = [...container.querySelectorAll('.file-input-wrapper:not(.dragging)')];
-                                    return draggableElements.reduce((closest, child) => {
-                                        const box = child.getBoundingClientRect();
-                                        const offset = y - box.top - box.height / 2;
-                                        if (offset < 0 && offset > closest.offset) {
-                                            return {
-                                                offset: offset,
-                                                element: child
-                                            };
-                                        } else {
-                                            return closest;
-                                        }
-                                    }, {
-                                        offset: Number.NEGATIVE_INFINITY
-                                    }).element;
-                                }
-
-                                // เริ่มต้นอัปเดตลำดับไฟล์
-                                updateFileOrder();
-                            });
-                        </script>
-
-
+                        <div class="col-12">
+                            <?= csrf_field() ?>
+                            <button type="submit" class="btn btn-primary">Upload Files</button>
+                        </div>
                     </div>
-                </div>
             </div>
-
-
-
         </section><!-- /Featured Services Section -->
-
         <!-- About Section -->
-
-
     </main>
     <?= $this->include('template/footer') ?>
-
-
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
@@ -328,6 +226,87 @@
     <?= $this->include('template/jsview') ?>
     <?= $this->include('template/datatable_js') ?>
 
+
+    <script>
+        const dropArea = document.getElementById("drop-area");
+        const fileInput = document.getElementById("fileInput");
+        const fileList = document.getElementById("file-list");
+        let filesArray = [];
+
+        dropArea.addEventListener("click", () => fileInput.click());
+        dropArea.addEventListener("dragover", (event) => event.preventDefault());
+        dropArea.addEventListener("drop", (event) => {
+            event.preventDefault();
+            handleFiles(event.dataTransfer.files);
+        });
+        fileInput.addEventListener("change", () => handleFiles(fileInput.files));
+
+        function handleFiles(files) {
+            const validFiles = Array.from(files).filter(file => file.type === "application/pdf");
+            filesArray = [...filesArray, ...validFiles];
+            displayFiles();
+        }
+
+        function displayFiles() {
+            fileList.innerHTML = "";
+            filesArray.forEach((file, index) => {
+                const li = document.createElement("li");
+                li.textContent = `${index + 1}. ${file.name}`;
+                const deleteButton = document.createElement("button");
+                deleteButton.textContent = "Delete";
+                deleteButton.classList.add("delete-button");
+                deleteButton.onclick = () => deleteFile(index);
+                li.appendChild(deleteButton);
+                fileList.appendChild(li);
+            });
+        }
+
+        function deleteFile(index) {
+            filesArray.splice(index, 1);
+            displayFiles();
+        }
+
+
+        // Handle Image file upload
+        const imageDropArea = document.getElementById("image-drop-area");
+        const imageInput = document.getElementById("imageInput");
+        const imageList = document.getElementById("image-list");
+        let imagesArray = [];
+
+        imageDropArea.addEventListener("click", () => imageInput.click());
+        imageDropArea.addEventListener("dragover", (event) => event.preventDefault());
+        imageDropArea.addEventListener("drop", (event) => {
+            event.preventDefault();
+            handleImageFiles(event.dataTransfer.files);
+        });
+        imageInput.addEventListener("change", () => handleImageFiles(imageInput.files));
+
+        function handleImageFiles(files) {
+            const validFiles = Array.from(files).filter(file => file.type.startsWith("image/"));
+            imagesArray = [...imagesArray, ...validFiles];
+            displayImageFiles();
+        }
+
+        function displayImageFiles() {
+            imageList.innerHTML = "";
+            imagesArray.forEach((file, index) => {
+                const li = document.createElement("li");
+                li.textContent = `${index + 1}. ${file.name}`;
+                const deleteButton = document.createElement("button");
+                deleteButton.textContent = "Delete";
+                deleteButton.classList.add("delete-button");
+                deleteButton.onclick = () => deleteImageFile(index);
+                li.appendChild(deleteButton);
+                imageList.appendChild(li);
+            });
+        }
+
+        function deleteImageFile(index) {
+            imagesArray.splice(index, 1);
+            displayImageFiles();
+        }
+
+    </script>
 </body>
 
 </html>
