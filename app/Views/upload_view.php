@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -104,7 +103,7 @@
 
         .file-name {
             display: flex;
-            align-items: center;
+            /* align-items: center; */
         }
 
         .delete-button {
@@ -135,8 +134,18 @@
                                 <h5>หัวข้อ</h5>
                                 <!-- <label for="basic-url" class="form-label">หัวข้อ</label> -->
                                 <div class="input-group">
-
-                                    <input type="text" class="form-control" id="basic-url"
+                                    <input type="text" class="form-control" id="topic" name="topic"
+                                        aria-describedby="basic-addon3 basic-addon4">
+                                </div>
+                                <!-- <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div> -->
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <h5>Code</h5>
+                                <!-- <label for="basic-url" class="form-label">หัวข้อ</label> -->
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="code" name="code"
                                         aria-describedby="basic-addon3 basic-addon4">
                                 </div>
                                 <!-- <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div> -->
@@ -147,15 +156,16 @@
                             <div class="mb-3">
                                 <!-- <label for="basic-url" class="form-label">วันที่ลงประกาศ</label> -->
                                 <div class="input-group">
-
-                                    <select class="form-select" id="exampleSelect" data-placeholder="Choose one thing"
-                                        aria-describedby="basic-addon3">
-                                        <option></option>
-                                        <option>Reactive</option>
-                                        <option>Solution</option>
-                                        <option>Conglomeration</option>
-                                        <option>Algoritm</option>
-                                        <option>Holistic</option>
+                                    <select class="form-select" id="exampleSelect" name="exampleSelect">
+                                        <option value="">Choose one thing</option> <!-- Placeholder -->
+                                        <?php if (!empty($type_action)): ?>
+                                            <?php foreach ($type_action as $type): ?>
+                                                <option value="<?= esc($type['type_code']) ?>"><?= esc($type['type_name']) ?>
+                                                </option>
+                                            <?php endforeach; ?>
+                                        <?php else: ?>
+                                            <option disabled>No options available</option>
+                                        <?php endif; ?>
                                     </select>
                                 </div>
                                 <!-- <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div> -->
@@ -164,8 +174,8 @@
                         <div class="col-12">
                             <h5>เลือกวันที่</h5>
                             <div class="input-group">
-
-                                <input type="text" class="form-control" id="datepicker" aria-describedby="basic-addon3">
+                                <input type="text" class="form-control" id="datepicker" name="datepicker"
+                                    aria-describedby="basic-addon3">
                             </div>
                         </div>
                         <div class="clearfix">
@@ -177,8 +187,7 @@
                             <!-- <div id="editor"> -->
                             <!-- <p>Core build with no theme, formatting, non-essential modules</p> -->
                             <!-- </div> -->
-
-                            <textarea></textarea>
+                            <textarea id="editor" name="content"></textarea>
                         </div>
                         <div class="clearfix">
                             <br>
@@ -205,7 +214,9 @@
                                 <ul class="file-list" id="image-list"></ul>
                             </div>
                         </div>
-
+                        <!-- Hidden inputs to store file orders -->
+                        <input type="" id="pdf-file-order" name="pdfFileOrder">
+                        <input type="" id="image-file-order" name="imageFileOrder">
                         <div class="col-12">
                             <?= csrf_field() ?>
                             <button type="submit" class="btn btn-primary">Upload Files</button>
@@ -226,87 +237,222 @@
     <?= $this->include('template/jsview') ?>
     <?= $this->include('template/datatable_js') ?>
 
-
+    <!-- Add Sortable.js for drag-and-drop reordering -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <!-- Place the first <script> tag in your HTML's <head> -->
+    <script src="https://cdn.tiny.cloud/1/j9qjklp57bfkjrqjtdhd5ke4v2bmlqxvvbxzrly7dro0ex5e/tinymce/7/tinymce.min.js"
+        referrerpolicy="origin"></script>
     <script>
-        const dropArea = document.getElementById("drop-area");
-        const fileInput = document.getElementById("fileInput");
-        const fileList = document.getElementById("file-list");
-        let filesArray = [];
+        document.addEventListener('DOMContentLoaded', function () {
+            // PDF Upload Handling
+            const dropArea = document.getElementById('drop-area');
+            const fileInput = document.getElementById('fileInput');
+            const fileList = document.getElementById('file-list');
 
-        dropArea.addEventListener("click", () => fileInput.click());
-        dropArea.addEventListener("dragover", (event) => event.preventDefault());
-        dropArea.addEventListener("drop", (event) => {
-            event.preventDefault();
-            handleFiles(event.dataTransfer.files);
+            // Image Upload Handling
+            const imageDropArea = document.getElementById('image-drop-area');
+            const imageInput = document.getElementById('imageInput');
+            const imageList = document.getElementById('image-list');
+
+            function initFileUpload(dropArea, fileInput, fileList) {
+                // Prevent default drag behaviors
+                ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                    dropArea.addEventListener(eventName, preventDefaults, false);
+                    document.body.addEventListener(eventName, preventDefaults, false);
+                });
+
+                // Highlight drop area when item is dragged over it
+                ['dragenter', 'dragover'].forEach(eventName => {
+                    dropArea.addEventListener(eventName, highlight, false);
+                });
+
+                ['dragleave', 'drop'].forEach(eventName => {
+                    dropArea.addEventListener(eventName, unhighlight, false);
+                });
+
+                // Handle dropped files
+                dropArea.addEventListener('drop', handleDrop, false);
+
+                // Handle click to select files
+                dropArea.addEventListener('dblclick', () => fileInput.click());
+
+                // Handle file selection
+                fileInput.addEventListener('change', function (e) {
+                    handleFiles(e.target.files, fileList);
+                    updateFileOrder(fileList, 'pdf'); // Trigger the order update when files are selected
+                });
+
+                // Make file list sortable using Sortable.js
+                new Sortable(fileList, {
+                    animation: 150,  // Add smooth animation for dragging
+                    handle: '.drag-handle',  // Use drag handle for dragging items
+                    onEnd(evt) {  // Handle when drag ends
+                        updateFileOrder(fileList, 'pdf'); // Update order after drag
+                    }
+                });
+            }
+
+            function initImageUpload(dropArea, imageInput, imageList) {
+                // Prevent default drag behaviors
+                ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                    dropArea.addEventListener(eventName, preventDefaults, false);
+                    document.body.addEventListener(eventName, preventDefaults, false);
+                });
+
+                // Highlight drop area when item is dragged over it
+                ['dragenter', 'dragover'].forEach(eventName => {
+                    dropArea.addEventListener(eventName, highlight, false);
+                });
+
+                ['dragleave', 'drop'].forEach(eventName => {
+                    dropArea.addEventListener(eventName, unhighlight, false);
+                });
+
+                // Handle dropped files
+                dropArea.addEventListener('drop', handleDrop, false);
+
+                // Handle click to select files
+                dropArea.addEventListener('dblclick', () => imageInput.click());
+
+                // Handle file selection
+                imageInput.addEventListener('change', function (e) {
+                    handleFiles(e.target.files, imageList);
+                    updateFileOrder(imageList, 'image'); // Trigger the order update when files are selected
+                });
+
+                // Make file list sortable using Sortable.js
+                new Sortable(imageList, {
+                    animation: 150,  // Add smooth animation for dragging
+                    handle: '.drag-handle',  // Use drag handle for dragging items
+                    onEnd(evt) {  // Handle when drag ends
+                        updateFileOrder(imageList, 'image'); // Update order after drag
+                    }
+                });
+            }
+
+            function preventDefaults(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+
+            function highlight(e) {
+                e.currentTarget.style.backgroundColor = '#f0f8ff';
+            }
+
+            function unhighlight(e) {
+                e.currentTarget.style.backgroundColor = '#fff';
+            }
+
+            function handleDrop(e) {
+                const dt = e.dataTransfer;
+                const files = dt.files;
+                handleFiles(files, fileList);
+            }
+
+            function handleFiles(files, listElement) {
+                [...files].forEach(file => {
+                    if (!isFileExist(file, listElement)) {
+                        const li = createFileListItem(file);
+                        listElement.appendChild(li);
+                    }
+                });
+            }
+
+            function isFileExist(file, listElement) {
+                return [...listElement.children].some(li =>
+                    li.querySelector('.file-name span').textContent === file.name
+                );
+            }
+
+            function createFileListItem(file) {
+                const li = document.createElement('li');
+                li.draggable = true;
+
+                const fileInfo = document.createElement('div');
+                fileInfo.className = 'file-info';
+
+                const fileName = document.createElement('div');
+                fileName.className = 'file-name';
+
+                const icon = document.createElement('img');
+                icon.className = 'file-icon';
+                icon.src = file.type.startsWith('image/') ?
+                    'assets/img/image-icon.png' :
+                    'assets/img/pdf-icon.png';
+
+                const nameSpan = document.createElement('span');
+                nameSpan.textContent = file.name;
+
+                const deleteBtn = document.createElement('button');
+                deleteBtn.className = 'delete-button';
+                deleteBtn.innerHTML = '×';
+                deleteBtn.onclick = () => li.remove();
+
+                fileName.appendChild(icon);
+                fileName.appendChild(nameSpan);
+                fileInfo.appendChild(fileName);
+                fileInfo.appendChild(deleteBtn);
+                li.appendChild(fileInfo);
+
+                // Add drag handle for reordering
+                const dragHandle = document.createElement('span');
+                dragHandle.className = 'drag-handle';
+                dragHandle.innerHTML = '☰';  // Optional: A symbol for drag handle
+                li.insertBefore(dragHandle, fileInfo);
+
+                return li;
+            }
+
+            function updateFileOrder(listElement, type) {
+                const fileOrder = [];
+                [...listElement.children].forEach((li, index) => {
+                    const fileName = li.querySelector('.file-name span').textContent;
+                    fileOrder.push(fileName);  // Save the name of the file in its new order
+                });
+
+                // Send the updated file order to the hidden input field
+                if (type === 'pdf') {
+                    document.getElementById('pdf-file-order').value = JSON.stringify(fileOrder);
+                } else if (type === 'image') {
+                    document.getElementById('image-file-order').value = JSON.stringify(fileOrder);
+                }
+            }
+
+            // Initialize both upload areas
+            initFileUpload(dropArea, fileInput, fileList);
+            initImageUpload(imageDropArea, imageInput, imageList);
         });
-        fileInput.addEventListener("change", () => handleFiles(fileInput.files));
-
-        function handleFiles(files) {
-            const validFiles = Array.from(files).filter(file => file.type === "application/pdf");
-            filesArray = [...filesArray, ...validFiles];
-            displayFiles();
-        }
-
-        function displayFiles() {
-            fileList.innerHTML = "";
-            filesArray.forEach((file, index) => {
-                const li = document.createElement("li");
-                li.textContent = `${index + 1}. ${file.name}`;
-                const deleteButton = document.createElement("button");
-                deleteButton.textContent = "Delete";
-                deleteButton.classList.add("delete-button");
-                deleteButton.onclick = () => deleteFile(index);
-                li.appendChild(deleteButton);
-                fileList.appendChild(li);
-            });
-        }
-
-        function deleteFile(index) {
-            filesArray.splice(index, 1);
-            displayFiles();
-        }
-
-
-        // Handle Image file upload
-        const imageDropArea = document.getElementById("image-drop-area");
-        const imageInput = document.getElementById("imageInput");
-        const imageList = document.getElementById("image-list");
-        let imagesArray = [];
-
-        imageDropArea.addEventListener("click", () => imageInput.click());
-        imageDropArea.addEventListener("dragover", (event) => event.preventDefault());
-        imageDropArea.addEventListener("drop", (event) => {
-            event.preventDefault();
-            handleImageFiles(event.dataTransfer.files);
-        });
-        imageInput.addEventListener("change", () => handleImageFiles(imageInput.files));
-
-        function handleImageFiles(files) {
-            const validFiles = Array.from(files).filter(file => file.type.startsWith("image/"));
-            imagesArray = [...imagesArray, ...validFiles];
-            displayImageFiles();
-        }
-
-        function displayImageFiles() {
-            imageList.innerHTML = "";
-            imagesArray.forEach((file, index) => {
-                const li = document.createElement("li");
-                li.textContent = `${index + 1}. ${file.name}`;
-                const deleteButton = document.createElement("button");
-                deleteButton.textContent = "Delete";
-                deleteButton.classList.add("delete-button");
-                deleteButton.onclick = () => deleteImageFile(index);
-                li.appendChild(deleteButton);
-                imageList.appendChild(li);
-            });
-        }
-
-        function deleteImageFile(index) {
-            imagesArray.splice(index, 1);
-            displayImageFiles();
-        }
 
     </script>
+    <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
+    <script>
+        tinymce.init({
+            selector: '#editor',
+            plugins: [
+                // Core editing features
+                'anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'image', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount',
+                // Your account includes a free trial of TinyMCE premium features
+                // Try the most popular premium features until Feb 25, 2025:
+                'checklist', 'casechange', 'export', 'formatpainter', 'pageembed', 'a11ychecker', 'tinymcespellchecker', 'permanentpen', 'powerpaste', 'advtable', 'advcode', 'editimage', 'advtemplate', 'ai', 'mentions', 'tinycomments', 'tableofcontents', 'footnotes', 'mergetags', 'autocorrect', 'typography', 'inlinecss', 'markdown', 'importword', 'exportword', 'exportpdf'
+            ],
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+            menubar: false,
+            mergetags_list: [{
+                value: 'First.Name',
+                title: 'First Name'
+            },
+            {
+                value: 'Email',
+                title: 'Email'
+            },
+            ],
+            ai_request: (request, respondWith) => respondWith.string(() => Promise.reject('See docs to implement AI Assistant')),
+        });
+    </script>
+
+
 </body>
 
 </html>

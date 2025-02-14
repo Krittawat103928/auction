@@ -349,3 +349,1141 @@ in APPPATH\Controllers\FileUploadController.php on line 35.
  5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-02-13 04:45:41 --> mysqli_sql_exception: Invalid default value for 'updated_at' in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\auction\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\auction\app\Database\Migrations\2025-02-10-062138_CreatefileTable.php(44): CodeIgniter\Database\Forge->createTable('files')
+#5 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreatefileTable->up()
+#6 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\auction\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\auction\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\auction\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\auction\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\auction\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\auction\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-02-13 04:46:17 --> mysqli_sql_exception: Invalid default value for 'updated_at' in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\auction\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\auction\app\Database\Migrations\2025-02-10-062138_CreatefileTable.php(44): CodeIgniter\Database\Forge->createTable('files')
+#5 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreatefileTable->up()
+#6 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\auction\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\auction\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\auction\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\auction\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\auction\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\auction\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-02-13 04:46:27 --> mysqli_sql_exception: Invalid default value for 'updated_at' in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\auction\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\auction\app\Database\Migrations\2025-02-10-062138_CreatefileTable.php(44): CodeIgniter\Database\Forge->createTable('files')
+#5 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreatefileTable->up()
+#6 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\auction\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\auction\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\auction\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\auction\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\auction\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\auction\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-02-13 04:46:55 --> ErrorException: Cannot declare class App\Database\Migrations\CreateAuctionTable, because the name is already in use
+[Method: CLI, Route: migrate]
+in APPPATH\Database\Migrations\2025-02-10-074123_CreateAuctionTable.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2025-02-13 04:48:39 --> mysqli_sql_exception: Table 'auctions' already exists in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `a...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `a...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `a...')
+#3 C:\xampp\htdocs\auction\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `a...')
+#4 C:\xampp\htdocs\auction\app\Database\Migrations\2025-02-10-073907_CreateAuctionTable.php(48): CodeIgniter\Database\Forge->createTable('auctions')
+#5 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreateAuctionTable->up()
+#6 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\auction\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\auction\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\auction\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\auction\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\auction\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\auction\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-02-13 04:48:53 --> mysqli_sql_exception: Table 'auction' already exists in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `a...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `a...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `a...')
+#3 C:\xampp\htdocs\auction\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `a...')
+#4 C:\xampp\htdocs\auction\app\Database\Migrations\2025-02-10-073907_CreateAuctionTable.php(48): CodeIgniter\Database\Forge->createTable('auction')
+#5 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreateAuctionTable->up()
+#6 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\auction\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\auction\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\auction\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\auction\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\auction\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\auction\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-02-13 04:53:25 --> mysqli_sql_exception: Invalid default value for 'updated_at' in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `a...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `a...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `a...')
+#3 C:\xampp\htdocs\auction\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `a...')
+#4 C:\xampp\htdocs\auction\app\Database\Migrations\2025-02-10-073907_CreateAuctionTable.php(48): CodeIgniter\Database\Forge->createTable('auction')
+#5 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreateAuctionTable->up()
+#6 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\auction\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\auction\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\auction\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\auction\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\auction\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\auction\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-02-13 04:58:24 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 71.
+ 1 APPPATH\Controllers\FileUploadController.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 04:59:38 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 81.
+ 1 APPPATH\Controllers\FileUploadController.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 04:59:40 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 81.
+ 1 APPPATH\Controllers\FileUploadController.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 04:59:45 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 81.
+ 1 APPPATH\Controllers\FileUploadController.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 05:02:06 --> ErrorException: Undefined variable $imagePaths
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 66.
+ 1 APPPATH\Controllers\FileUploadController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imagePaths', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-02-13 06:16:31 --> mysqli_sql_exception: Table 'auction' already exists in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `a...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `a...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `a...')
+#3 C:\xampp\htdocs\auction\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `a...')
+#4 C:\xampp\htdocs\auction\app\Database\Migrations\2025-02-10-073907_CreateAuctionTable.php(48): CodeIgniter\Database\Forge->createTable('auction')
+#5 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreateAuctionTable->up()
+#6 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\auction\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\auction\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\auction\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\auction\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\auction\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\auction\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-02-13 06:16:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL,
+	`status` ENUM('active','inactive','archived') NOT NULL DEFAULT 'active...' at line 12 in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\auction\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\auction\app\Database\Migrations\2025-02-13-044024_CreateUploadedFilesTable.php(67): CodeIgniter\Database\Forge->createTable('uploaded_files')
+#5 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreateUploadedFilesTable->up()
+#6 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\auction\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\auction\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\auction\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\auction\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\auction\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\auction\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-02-13 06:48:44 --> Error: Class "App\Controllers\AuctionModel" not found
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\FileUploadController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-02-13 07:01:14 --> mysqli_sql_exception: Table 'tcl.auctions' doesn't exist in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\xampp\htdocs\auction\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\xampp\htdocs\auction\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\auction\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\auction\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\auction\app\Models\AuctionModel.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\auction\app\Controllers\FileUploadController.php(51): App\Models\AuctionModel->insertAuction(Array)
+#9 C:\xampp\htdocs\auction\system\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+#10 C:\xampp\htdocs\auction\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+#11 C:\xampp\htdocs\auction\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\auction\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\auction\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\auction\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-02-13 07:01:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tcl.auctions' doesn't exist
+[Method: POST, Route: upload/uploadFiles]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `auctions` (`auction_name`, `auction_content`) VALUES (:auction_name:, :auction_content:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\AuctionModel.php(31): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\FileUploadController.php(51): App\Models\AuctionModel->insertAuction([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 07:01:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tcl.auctions' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `auctions` (`auction_name`, `auction_content`) VALUES (\'qqqq\', \'<p>sadsadaxcbxcvxc</p>\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `auctions` (`auction_name`, `auction_content`) VALUES (\'qqqq\', \'<p>sadsadaxcbxcvxc</p>\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `auctions` (`auction_name`, `auction_content`) VALUES (:auction_name:, :auction_content:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\AuctionModel.php(31): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\FileUploadController.php(51): App\Models\AuctionModel->insertAuction([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 07:01:14 --> [Caused by] mysqli_sql_exception: Table 'tcl.auctions' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `auctions` (`auction_name`, `auction_content`) VALUES (\'qqqq\', \'<p>sadsadaxcbxcvxc</p>\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `auctions` (`auction_name`, `auction_content`) VALUES (\'qqqq\', \'<p>sadsadaxcbxcvxc</p>\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `auctions` (`auction_name`, `auction_content`) VALUES (\'qqqq\', \'<p>sadsadaxcbxcvxc</p>\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `auctions` (`auction_name`, `auction_content`) VALUES (:auction_name:, :auction_content:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\AuctionModel.php(31): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\FileUploadController.php(51): App\Models\AuctionModel->insertAuction([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-02-13 07:02:00 --> mysqli_sql_exception: Table 'uploaded_files' already exists in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\auction\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\auction\app\Database\Migrations\2025-02-13-044024_CreateUploadedFilesTable.php(67): CodeIgniter\Database\Forge->createTable('uploaded_files')
+#5 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreateUploadedFilesTable->up()
+#6 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\auction\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\auction\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\auction\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\auction\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\auction\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\auction\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-02-13 07:04:44 --> mysqli_sql_exception: Table 'uploaded_files' already exists in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\auction\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\auction\app\Database\Migrations\2025-02-13-044024_CreateUploadedFilesTable.php(67): CodeIgniter\Database\Forge->createTable('uploaded_files')
+#5 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreateUploadedFilesTable->up()
+#6 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\auction\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\auction\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\auction\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\auction\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\auction\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\auction\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-02-13 07:20:34 --> mysqli_sql_exception: Table 'uploaded_files' already exists in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\auction\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\auction\app\Database\Migrations\2025-02-13-044024_CreateUploadedFilesTable.php(67): CodeIgniter\Database\Forge->createTable('uploaded_files')
+#5 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(866): App\Database\Migrations\CreateUploadedFilesTable->up()
+#6 C:\xampp\htdocs\auction\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\auction\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\auction\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\auction\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\auction\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\auction\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\auction\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-02-13 07:40:47 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\TypeModel::getArticles
+[Method: GET, Route: uploaddata]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Auction.php(33): CodeIgniter\Model->__call('getArticles', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auction->uploaddata()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auction))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-02-13 08:24:03 --> mysqli_sql_exception: Table 'tcl.files' doesn't exist in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `a`.*, `...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 C:\xampp\htdocs\auction\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 C:\xampp\htdocs\auction\app\Models\AuctionModel.php(65): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\auction\app\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+#6 C:\xampp\htdocs\auction\system\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+#7 C:\xampp\htdocs\auction\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+#8 C:\xampp\htdocs\auction\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\auction\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\auction\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\auction\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-02-13 08:24:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tcl.files' doesn't exist
+[Method: GET, Route: detail]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `f`.`file_name`, `f`.`file_type`, `f`.`file_size`, `f`.`file_path`, `f`.`order`
+FROM `auctions` `a`
+LEFT JOIN `files` `f` ON `f`.`auction_FK_id` = `a`.`id`
+WHERE `a`.`id` = :a.id:', [...], false)
+ 2 APPPATH\Models\AuctionModel.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:24:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tcl.files' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `f`.`file_name`, `f`.`file_type`, `f`.`file_size`, `f`.`file_path`, `f`.`order`
+FROM `auctions` `a`
+LEFT JOIN `files` `f` ON `f`.`auction_FK_id` = `a`.`id`
+WHERE `a`.`id` = \'11\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `f`.`file_name`, `f`.`file_type`, `f`.`file_size`, `f`.`file_path`, `f`.`order`
+FROM `auctions` `a`
+LEFT JOIN `files` `f` ON `f`.`auction_FK_id` = `a`.`id`
+WHERE `a`.`id` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `f`.`file_name`, `f`.`file_type`, `f`.`file_size`, `f`.`file_path`, `f`.`order`
+FROM `auctions` `a`
+LEFT JOIN `files` `f` ON `f`.`auction_FK_id` = `a`.`id`
+WHERE `a`.`id` = :a.id:', [...], false)
+ 4 APPPATH\Models\AuctionModel.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:24:03 --> [Caused by] mysqli_sql_exception: Table 'tcl.files' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `a`.*, `f`.`file_name`, `f`.`file_type`, `f`.`file_size`, `f`.`file_path`, `f`.`order`
+FROM `auctions` `a`
+LEFT JOIN `files` `f` ON `f`.`auction_FK_id` = `a`.`id`
+WHERE `a`.`id` = \'11\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `f`.`file_name`, `f`.`file_type`, `f`.`file_size`, `f`.`file_path`, `f`.`order`
+FROM `auctions` `a`
+LEFT JOIN `files` `f` ON `f`.`auction_FK_id` = `a`.`id`
+WHERE `a`.`id` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `f`.`file_name`, `f`.`file_type`, `f`.`file_size`, `f`.`file_path`, `f`.`order`
+FROM `auctions` `a`
+LEFT JOIN `files` `f` ON `f`.`auction_FK_id` = `a`.`id`
+WHERE `a`.`id` = \'11\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `f`.`file_name`, `f`.`file_type`, `f`.`file_size`, `f`.`file_path`, `f`.`order`
+FROM `auctions` `a`
+LEFT JOIN `files` `f` ON `f`.`auction_FK_id` = `a`.`id`
+WHERE `a`.`id` = :a.id:', [...], false)
+ 5 APPPATH\Models\AuctionModel.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:27:08 --> ErrorException: Undefined variable $topic
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 138.
+ 1 APPPATH\Views\auction_detail.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $topic', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 138)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(93): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:27:53 --> ErrorException: Undefined variable $topic
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 138.
+ 1 APPPATH\Views\auction_detail.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $topic', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 138)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(93): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:27:54 --> ErrorException: Undefined variable $topic
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 138.
+ 1 APPPATH\Views\auction_detail.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $topic', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 138)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(93): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:27:54 --> ErrorException: Undefined variable $topic
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 138.
+ 1 APPPATH\Views\auction_detail.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $topic', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 138)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(93): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:27:55 --> ErrorException: Undefined variable $topic
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 138.
+ 1 APPPATH\Views\auction_detail.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $topic', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 138)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(93): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:27:55 --> ErrorException: Undefined variable $topic
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 138.
+ 1 APPPATH\Views\auction_detail.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $topic', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 138)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(93): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:27:56 --> ErrorException: Undefined variable $topic
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 138.
+ 1 APPPATH\Views\auction_detail.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $topic', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 138)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(93): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:27:58 --> ErrorException: Undefined variable $topic
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 138.
+ 1 APPPATH\Views\auction_detail.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $topic', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 138)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(93): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:28:58 --> ErrorException: Undefined array key "auction_name"
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 138.
+ 1 APPPATH\Views\auction_detail.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auction_name"', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 138)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(93): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:30:10 --> ErrorException: Undefined array key "auction_name"
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 APPPATH\Views\auction_detail.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auction_name"', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 139)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(93): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:30:13 --> ErrorException: Undefined array key "auction_name"
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 APPPATH\Views\auction_detail.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "auction_name"', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 139)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(93): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:33:22 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+[Method: GET, Route: detail]
+in APPPATH\Models\AuctionModel.php on line 64.
+ 1 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:33:23 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+[Method: GET, Route: detail]
+in APPPATH\Models\AuctionModel.php on line 64.
+ 1 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:35:03 --> ParseError: Unmatched '}'
+[Method: GET, Route: detail]
+in APPPATH\Models\AuctionModel.php on line 80.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\auction\\app\\Models\\AuctionModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\AuctionModel')
+ 3 APPPATH\Controllers\FileUploadController.php(17): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\AuctionModel')
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\FileUploadController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-02-13 08:35:16 --> mysqli_sql_exception: Table 'tcl.auction_files' doesn't exist in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `auction...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction...')
+#3 C:\xampp\htdocs\auction\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auction...', Array, false)
+#4 C:\xampp\htdocs\auction\app\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\auction\app\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+#6 C:\xampp\htdocs\auction\system\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+#7 C:\xampp\htdocs\auction\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+#8 C:\xampp\htdocs\auction\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\auction\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\auction\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\auction\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-02-13 08:35:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'tcl.auction_files' doesn't exist
+[Method: GET, Route: detail]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `auction_files` ON `auction`.`id` = `auction_files`.`auction_FK_id`
+WHERE `auction`.`id` = :auction.id:
+AND `auction_files`.`status` = :auction_files.status:', [...], false)
+ 2 APPPATH\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:35:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'tcl.auction_files' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `auction_files` ON `auction`.`id` = `auction_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `auction_files`.`status` = \'active\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `auction_files` ON `auction`.`id` = `auction_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `auction_files`.`status` = \'active\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `auction_files` ON `auction`.`id` = `auction_files`.`auction_FK_id`
+WHERE `auction`.`id` = :auction.id:
+AND `auction_files`.`status` = :auction_files.status:', [...], false)
+ 4 APPPATH\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:35:16 --> [Caused by] mysqli_sql_exception: Table 'tcl.auction_files' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `auction_files` ON `auction`.`id` = `auction_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `auction_files`.`status` = \'active\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `auction_files` ON `auction`.`id` = `auction_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `auction_files`.`status` = \'active\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `auction_files` ON `auction`.`id` = `auction_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `auction_files`.`status` = \'active\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `auction_files` ON `auction`.`id` = `auction_files`.`auction_FK_id`
+WHERE `auction`.`id` = :auction.id:
+AND `auction_files`.`status` = :auction_files.status:', [...], false)
+ 5 APPPATH\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-02-13 08:35:46 --> mysqli_sql_exception: Unknown column 'auction.id' in 'field list' in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `auction...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction...')
+#3 C:\xampp\htdocs\auction\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auction...', Array, false)
+#4 C:\xampp\htdocs\auction\app\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\auction\app\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+#6 C:\xampp\htdocs\auction\system\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+#7 C:\xampp\htdocs\auction\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+#8 C:\xampp\htdocs\auction\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\auction\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\auction\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\auction\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-02-13 08:35:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction.id' in 'field list'
+[Method: GET, Route: detail]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = :auction.id:
+AND `uploaded_files`.`status` = :uploaded_files.status:', [...], false)
+ 2 APPPATH\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:35:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = :auction.id:
+AND `uploaded_files`.`status` = :uploaded_files.status:', [...], false)
+ 4 APPPATH\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:35:46 --> [Caused by] mysqli_sql_exception: Unknown column 'auction.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = :auction.id:
+AND `uploaded_files`.`status` = :uploaded_files.status:', [...], false)
+ 5 APPPATH\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-02-13 08:35:46 --> mysqli_sql_exception: Unknown column 'auction.id' in 'field list' in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `auction...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction...')
+#3 C:\xampp\htdocs\auction\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auction...', Array, false)
+#4 C:\xampp\htdocs\auction\app\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\auction\app\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+#6 C:\xampp\htdocs\auction\system\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+#7 C:\xampp\htdocs\auction\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+#8 C:\xampp\htdocs\auction\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\auction\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\auction\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\auction\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-02-13 08:35:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction.id' in 'field list'
+[Method: GET, Route: detail]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = :auction.id:
+AND `uploaded_files`.`status` = :uploaded_files.status:', [...], false)
+ 2 APPPATH\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:35:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auction.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = :auction.id:
+AND `uploaded_files`.`status` = :uploaded_files.status:', [...], false)
+ 4 APPPATH\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:35:46 --> [Caused by] mysqli_sql_exception: Unknown column 'auction.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auction`.`id` AS `auction_id`, `auction`.`auction_code`, `auction`.`auction_name`, `auction`.`auction_price`, `auction`.`auction_content`, `auction`.`auction_type`, `auction`.`auction_date`, `auction`.`created_at` AS `auction_created_at`, `auction`.`updated_at` AS `auction_updated_at`, `auction_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = :auction.id:
+AND `uploaded_files`.`status` = :uploaded_files.status:', [...], false)
+ 5 APPPATH\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-02-13 08:37:19 --> mysqli_sql_exception: Unknown column 'auctions_files.id' in 'field list' in C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\auction\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `auction...', 0)
+#1 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auction...')
+#2 C:\xampp\htdocs\auction\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auction...')
+#3 C:\xampp\htdocs\auction\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auction...', Array, false)
+#4 C:\xampp\htdocs\auction\app\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\auction\app\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+#6 C:\xampp\htdocs\auction\system\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+#7 C:\xampp\htdocs\auction\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+#8 C:\xampp\htdocs\auction\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\auction\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\auction\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\auction\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-02-13 08:37:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auctions_files.id' in 'field list'
+[Method: GET, Route: detail]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auctions`.`id` AS `auction_id`, `auctions`.`auction_code`, `auctions`.`auction_name`, `auctions`.`auction_price`, `auctions`.`auction_content`, `auctions`.`auction_type`, `auctions`.`auction_date`, `auctions`.`created_at` AS `auction_created_at`, `auctions`.`updated_at` AS `auction_updated_at`, `auctions_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = :auction.id:
+AND `uploaded_files`.`status` = :uploaded_files.status:', [...], false)
+ 2 APPPATH\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:37:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auctions_files.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auctions`.`id` AS `auction_id`, `auctions`.`auction_code`, `auctions`.`auction_name`, `auctions`.`auction_price`, `auctions`.`auction_content`, `auctions`.`auction_type`, `auctions`.`auction_date`, `auctions`.`created_at` AS `auction_created_at`, `auctions`.`updated_at` AS `auction_updated_at`, `auctions_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auctions`.`id` AS `auction_id`, `auctions`.`auction_code`, `auctions`.`auction_name`, `auctions`.`auction_price`, `auctions`.`auction_content`, `auctions`.`auction_type`, `auctions`.`auction_date`, `auctions`.`created_at` AS `auction_created_at`, `auctions`.`updated_at` AS `auction_updated_at`, `auctions_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auctions`.`id` AS `auction_id`, `auctions`.`auction_code`, `auctions`.`auction_name`, `auctions`.`auction_price`, `auctions`.`auction_content`, `auctions`.`auction_type`, `auctions`.`auction_date`, `auctions`.`created_at` AS `auction_created_at`, `auctions`.`updated_at` AS `auction_updated_at`, `auctions_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = :auction.id:
+AND `uploaded_files`.`status` = :uploaded_files.status:', [...], false)
+ 4 APPPATH\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:37:19 --> [Caused by] mysqli_sql_exception: Unknown column 'auctions_files.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `auctions`.`id` AS `auction_id`, `auctions`.`auction_code`, `auctions`.`auction_name`, `auctions`.`auction_price`, `auctions`.`auction_content`, `auctions`.`auction_type`, `auctions`.`auction_date`, `auctions`.`created_at` AS `auction_created_at`, `auctions`.`updated_at` AS `auction_updated_at`, `auctions_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auctions`.`id` AS `auction_id`, `auctions`.`auction_code`, `auctions`.`auction_name`, `auctions`.`auction_price`, `auctions`.`auction_content`, `auctions`.`auction_type`, `auctions`.`auction_date`, `auctions`.`created_at` AS `auction_created_at`, `auctions`.`updated_at` AS `auction_updated_at`, `auctions_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auctions`.`id` AS `auction_id`, `auctions`.`auction_code`, `auctions`.`auction_name`, `auctions`.`auction_price`, `auctions`.`auction_content`, `auctions`.`auction_type`, `auctions`.`auction_date`, `auctions`.`created_at` AS `auction_created_at`, `auctions`.`updated_at` AS `auction_updated_at`, `auctions_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = \'11\'
+AND `uploaded_files`.`status` = \'active\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `auctions`.`id` AS `auction_id`, `auctions`.`auction_code`, `auctions`.`auction_name`, `auctions`.`auction_price`, `auctions`.`auction_content`, `auctions`.`auction_type`, `auctions`.`auction_date`, `auctions`.`created_at` AS `auction_created_at`, `auctions`.`updated_at` AS `auction_updated_at`, `auctions_files`.`id` AS `file_id`, `auction_files`.`file_name`, `auction_files`.`file_type`, `auction_files`.`file_size`, `auction_files`.`file_path`, `auction_files`.`created_at` AS `file_created_at`, `auction_files`.`updated_at` AS `file_updated_at`, `auction_files`.`created_by`, `auction_files`.`updated_by`, `auction_files`.`order`, `auction_files`.`status` AS `file_status`
+FROM `auctions`
+JOIN `uploaded_files` ON `auction`.`id` = `uploaded_files`.`auction_FK_id`
+WHERE `auction`.`id` = :auction.id:
+AND `uploaded_files`.`status` = :uploaded_files.status:', [...], false)
+ 5 APPPATH\Models\AuctionModel.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\FileUploadController.php(88): App\Models\AuctionModel->getAuctionWithFiles('11')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:38:05 --> ErrorException: Undefined array key 0
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 APPPATH\Views\auction_detail.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 139)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(93): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:40:34 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 4 APPPATH\Controllers\FileUploadController.php(94): view('auction_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:40:52 --> ErrorException: Undefined array key 0
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 APPPATH\Views\auction_detail.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 139)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(94): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:42:06 --> ErrorException: Undefined array key 0
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 APPPATH\Views\auction_detail.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 139)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(94): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:42:27 --> ErrorException: Undefined array key 0
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 APPPATH\Views\auction_detail.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 139)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(94): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:43:24 --> ErrorException: Undefined array key 0
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 APPPATH\Views\auction_detail.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 139)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(94): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:44:03 --> ErrorException: Undefined array key 0
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 APPPATH\Views\auction_detail.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 139)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(94): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:44:17 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 APPPATH\Views\auction_detail.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 139)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(94): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:44:54 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 APPPATH\Views\auction_detail.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 139)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(94): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:45:09 --> ErrorException: Undefined array key 0
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 APPPATH\Views\auction_detail.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 139)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(94): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:45:40 --> ErrorException: Undefined array key 0
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 APPPATH\Views\auction_detail.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php', 139)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\auction\\app\\Views\\auction_detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 5 APPPATH\Controllers\FileUploadController.php(94): view('auction_detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:46:53 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 4 APPPATH\Controllers\FileUploadController.php(94): view('auction_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:47:17 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 4 APPPATH\Controllers\FileUploadController.php(94): view('auction_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 08:47:18 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: detail]
+in APPPATH\Views\auction_detail.php on line 139.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('auction_detail', [], true)
+ 4 APPPATH\Controllers\FileUploadController.php(94): view('auction_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->showUploadDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 09:02:44 --> ErrorException: Undefined array key 1
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 206.
+ 1 APPPATH\Controllers\FileUploadController.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 206)
+ 2 APPPATH\Controllers\FileUploadController.php(42): App\Controllers\FileUploadController->convert_Buddhist(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 09:03:12 --> ErrorException: Undefined array key 1
+[Method: POST, Route: upload/uploadFiles]
+in APPPATH\Controllers\FileUploadController.php on line 206.
+ 1 APPPATH\Controllers\FileUploadController.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\auction\\app\\Controllers\\FileUploadController.php', 206)
+ 2 APPPATH\Controllers\FileUploadController.php(42): App\Controllers\FileUploadController->convert_Buddhist(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FileUploadController->uploadFiles()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FileUploadController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

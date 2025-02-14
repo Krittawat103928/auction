@@ -30,3 +30,30 @@
 <link rel="stylesheet" href="assets/select2/css/select2.css" />
 <!-- Select2 Bootstrap 5 Theme CSS -->
 <link rel="stylesheet" href="assets/select2/css/select2-bootstrap-5-theme.css" />
+
+
+<link rel="stylesheet" href="assets/quill/quill.snow.css" />
+
+
+<style>
+    /* Background for empty editor */
+    .ql-editor.ql-blank {
+        background-color: #f0f0f0;
+        /* Light gray background */
+    }
+
+    /* Background for filled editor */
+    .ql-editor {
+        background-color: #ffffff;
+        /* White background when content is added */
+
+
+    }
+
+    .ql-container.ql-snow {
+        height: 100px;
+    min-height: 200px;  /* กำหนดความสูงขั้นต่ำ */
+    overflow-y: auto;   /* เพิ่มการเลื่อนเมื่อเนื้อหามากเกินไป */
+}
+
+</style>

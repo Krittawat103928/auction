@@ -12,6 +12,9 @@ $routes->get('/uploaddata', 'Auction::uploaddata');
 
 $routes->post('/upload/uploadFiles/', 'FileUploadController::uploadFiles');
 
+$routes->get('/detail', 'FileUploadController::showUploadDetails');
+
+
 
 $routes->post('/loadajax', 'Home::load_ajax');
 // ทดสอบบันทึกข้อมูล

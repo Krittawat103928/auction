@@ -22,40 +22,35 @@
 <!-- Select2 JS -->
 <script src="assets/select2/js/select2.full.min.js"></script>
 
+<!-- <script src="assets/quill/quill.js"></script> -->
 
-<!-- Place the first <script> tag in your HTML's <head> -->
-<script src="https://cdn.tiny.cloud/1/j9qjklp57bfkjrqjtdhd5ke4v2bmlqxvvbxzrly7dro0ex5e/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
-
-<!-- Place the following <script> and <textarea> tags your HTML's <body> -->
+<script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
 <script>
-    tinymce.init({
-        selector: 'textarea',
-        plugins: [
-            // Core editing features
-            'anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'image', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount',
-            // Your account includes a free trial of TinyMCE premium features
-            // Try the most popular premium features until Feb 25, 2025:
-            'checklist', 'casechange', 'export', 'formatpainter', 'pageembed', 'a11ychecker', 'tinymcespellchecker', 'permanentpen', 'powerpaste', 'advtable', 'advcode', 'editimage', 'advtemplate', 'ai', 'mentions', 'tinycomments', 'tableofcontents', 'footnotes', 'mergetags', 'autocorrect', 'typography', 'inlinecss', 'markdown', 'importword', 'exportword', 'exportpdf'
-        ],
-        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
-        tinycomments_mode: 'embedded',
-        tinycomments_author: 'Author name',
-        menubar: false,
-        mergetags_list: [{
-                value: 'First.Name',
-                title: 'First Name'
-            },
-            {
-                value: 'Email',
-                title: 'Email'
-            },
-        ],
-        ai_request: (request, respondWith) => respondWith.string(() => Promise.reject('See docs to implement AI Assistant')),
-    });
-</script>
 
-<script>
-    $(document).ready(function() {
+
+
+
+
+    var toolbarOptions = [
+        ['bold', 'italic', 'underline', 'strike'], // toggled buttons
+        ['blockquote', 'code-block'],
+        [{ 'header': 1 }, { 'header': 2 }], // custom button values
+        [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+        [{ 'script': 'sub' }, { 'script': 'super' }], // superscript/subscript
+        [{ 'indent': '-1' }, { 'indent': '+1' }], // outdent/indent
+        [{ 'direction': 'rtl' }], // text direction
+
+        [{ 'size': ['small', false, 'large', 'huge'] }], // custom dropdown
+        [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+        [{ 'color': [] }, { 'background': [] }], // dropdown with defaults from theme
+        [{ 'font': [] }],
+        [{ 'align': [] }],
+        ['clean']                                         // remove formatting button
+    ];
+    
+
+
+    $(document).ready(function () {
         // $('#example').DataTable({
         //     "pageLength": 20,
         //     "lengthMenu": [10, 20, 50, 100],
@@ -77,7 +72,7 @@
         // });
     });
 
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         flatpickr("#datepicker", {
             locale: "th",
             altInput: true, // ใช้ altInput ในการแสดงผล
@@ -101,21 +96,21 @@
                 const buddhistYear = date.getFullYear() + 543;
                 return `${day}/${month}/${buddhistYear}`;
             },
-            onOpen: function(selectedDates, dateStr, instance) {
+            onOpen: function (selectedDates, dateStr, instance) {
                 const yearInput = instance.calendarContainer.querySelector(".cur-year");
                 if (yearInput) {
                     // เปลี่ยนปีที่แสดงใน input ให้เป็นปี พ.ศ.
                     yearInput.value = instance.currentYear + 543;
                 }
             },
-            onReady: function(selectedDates, dateStr, instance) {
+            onReady: function (selectedDates, dateStr, instance) {
                 const yearInput = instance.calendarContainer.querySelector(".cur-year");
                 if (yearInput) {
                     // เปลี่ยนปีที่แสดงใน input ให้เป็นปี พ.ศ.
                     yearInput.value = parseInt(yearInput.value, 10) + 543;
                 }
             },
-            onYearChange: function(selectedDates, dateStr, instance) {
+            onYearChange: function (selectedDates, dateStr, instance) {
                 const yearInput = instance.calendarContainer.querySelector(".cur-year");
                 if (yearInput) {
                     // เมื่อปีเปลี่ยน แสดงผลเป็นปี พ.ศ.
@@ -129,7 +124,7 @@
 
 
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         $("#exampleSelect").select2({
             placeholder: "Select an option",
             allowClear: true,

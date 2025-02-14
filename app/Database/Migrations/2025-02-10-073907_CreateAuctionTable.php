@@ -29,6 +29,14 @@ class CreateAuctionTable extends Migration
                 'constraint' => 11,
                 'unsigned' => true,
             ],
+            'auction_content' => [
+                'type' => 'TEXT',
+                'null' => false,
+            ],
+            'auction_type' => [
+                'type' => 'TEXT',
+                'null' => false,
+            ],
             'auction_date' => [
                 'type' => 'DATETIME',
                 'null' => true,
@@ -45,11 +53,11 @@ class CreateAuctionTable extends Migration
 
 
         $this->forge->addPrimaryKey('id');
-        $this->forge->createTable('auction');
+        $this->forge->createTable('auctions');
     }
 
     public function down()
     {
-        $this->forge->dropTable('auction');
+        $this->forge->dropTable('auctions');
     }
 }
