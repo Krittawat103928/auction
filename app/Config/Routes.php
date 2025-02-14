@@ -5,6 +5,11 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+$routes->get('/admin', 'Login::index');
+$routes->post('/login', 'Login::login');
+
+
+
 $routes->get('/', 'Home::index');
 $routes->get('/fecth_data', 'Home::fecth_data');
 $routes->get('/insertAuction', 'Home::insertAuction');
